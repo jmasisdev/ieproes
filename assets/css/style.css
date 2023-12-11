@@ -46,6 +46,7 @@ header {
   background-color: transparent;
   position: fixed;
   width: 100%;
+  font-family: Moonrising;
 }
 header .info-ieproes ul {
   list-style: none;
@@ -78,6 +79,9 @@ header .info-ieproes .redes-sociales li {
 }
 header nav.navbar .navbar-brand img {
   width: 110px;
+}
+header nav.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 0.875rem;
 }
 
 footer {
