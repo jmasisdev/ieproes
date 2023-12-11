@@ -32,6 +32,10 @@ img {
   background-color: #1F1A3B !important;
 }
 
+.text-dark-gray {
+  color: #7D7979 !important;
+}
+
 @media screen and (max-width: 1200px) {
   .text-content {
     padding-left: 40px;
@@ -316,6 +320,63 @@ footer .rights p {
   border-radius: 4rem;
   height: 320px;
   object-fit: cover;
+}
+.home-page #post {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.home-page #post h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.home-page #post .post-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.home-page #post .post-wrapper figure {
+  flex: 0 0 48.2%;
+  background-color: #EDECED;
+  color: #1D1D1B;
+  padding: 2rem 3rem;
+  margin-bottom: 0;
+}
+.home-page #post .post-wrapper figure .date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.875rem;
+}
+.home-page #post .post-wrapper figure .date img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.275rem;
+}
+.home-page #post .post-wrapper figure .headline {
+  font-family: Moonrising !important;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+.home-page #post .post-wrapper figure a {
+  text-decoration: none;
+  color: #1D1D1B;
+}
+.home-page #post .post-wrapper figure img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+.home-page #post .post-wrapper figure p {
+  line-height: 1.125rem;
+}
+.home-page #post .post-wrapper figure:nth-child(1), .home-page #post .post-wrapper figure:nth-child(4) {
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+.home-page #post .post-wrapper figure:nth-child(2), .home-page #post .post-wrapper figure:nth-child(3) {
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
 
 @media screen and (max-width: 991px) {
