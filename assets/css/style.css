@@ -277,9 +277,6 @@ footer .rights p {
   background-size: 100%;
   background-position-y: calc(100% - 0px);
 }
-.home-page #conoce-ieproes {
-  padding: 6rem 0;
-}
 .home-page #conoce-ieproes .content {
   gap: 80px;
 }
@@ -305,7 +302,7 @@ footer .rights p {
   flex: 1;
 }
 .home-page #conoce-ieproes .content img {
-  border-bottom-left-radius: 120px;
+  border-bottom-left-radius: 80px;
 }
 .home-page #oferta-academica {
   padding: 6rem 0;
@@ -379,10 +376,7 @@ footer .rights p {
   border-bottom-right-radius: 80px;
 }
 
-@media screen and (max-width: 991px) {
-  .home-page #conoce-ieproes {
-    padding: 3rem 0;
-  }
+@media screen and (max-width: 992px) {
   .home-page #conoce-ieproes .content {
     gap: 40px;
   }
@@ -413,6 +407,24 @@ footer .rights p {
     border-radius: 2rem;
     height: 200px;
   }
+  .home-page #post {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .home-page #post h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  .home-page #post .post-wrapper {
+    gap: 1rem;
+  }
+  .home-page #post .post-wrapper figure {
+    padding: 2rem;
+  }
+  .home-page #post .post-wrapper figure img {
+    width: 120px;
+    height: 120px;
+  }
 }
 @media screen and (max-width: 767px) {
   .home-page #destacado {
@@ -427,6 +439,24 @@ footer .rights p {
     border-radius: 4rem;
     width: 100%;
     height: 100%;
+  }
+  .home-page #post {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .home-page #post h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .home-page #post .post-wrapper {
+    gap: 1rem;
+  }
+  .home-page #post .post-wrapper figure {
+    flex: 0 0 100%;
+  }
+  .home-page #post .post-wrapper figure img {
+    width: 180px;
+    height: 180px;
   }
 }
 @media screen and (max-width: 480px) {
