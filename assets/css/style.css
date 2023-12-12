@@ -66,6 +66,7 @@ img {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   text-transform: uppercase;
+  font-size: 0.875rem;
   font-weight: bold;
   cursor: pointer !important;
   text-decoration: none;
@@ -76,6 +77,24 @@ img {
 .ebook-btn {
   background: #A1D8F2;
   color: #1F1A3B;
+}
+.ebook-btn img {
+  width: 16px !important;
+  height: auto !important;
+  margin-top: -6px !important;
+  margin-bottom: 0 !important;
+  margin-right: 0.4rem;
+}
+
+input[type=text], input[type=submit], button[type=submit] {
+  border: 0 !important;
+  border-top-left-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
+}
+
+input[type=text] {
+  background-color: #EDECED;
+  padding: 0.5rem 1.75rem;
 }
 
 header {
@@ -134,11 +153,21 @@ header .dropdown-toggle::after {
   display: none !important;
 }
 
+@media screen and (max-width: 992px) {
+  header {
+    position: relative;
+  }
+}
 main {
   padding-top: 12rem;
   padding-bottom: 8.125rem;
 }
 
+@media screen and (max-width: 992px) {
+  main {
+    padding-top: 0;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -517,13 +546,13 @@ footer .rights p {
     border-radius: 3rem;
   }
 }
-.repo {
+.repositorio-institucional-page .repo-container .repo {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
 }
-.repo .item {
+.repositorio-institucional-page .repo-container .repo .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -534,18 +563,93 @@ footer .rights p {
   border-bottom-right-radius: 5rem;
   padding: 2rem;
 }
-.repo .item img {
+.repositorio-institucional-page .repo-container .repo .item img {
   width: 280px;
   height: 300px;
   object-fit: contain;
   object-position: top center;
   margin-bottom: 1rem;
 }
-.repo .item .headline {
+.repositorio-institucional-page .repo-container .repo .item .headline {
   font-size: 1.125rem;
   line-height: 1.3rem;
   margin-bottom: 1rem;
 }
-.repo .item .category {
+.repositorio-institucional-page .repo-container .repo .item .category {
   font-size: 1rem;
+}
+.repositorio-institucional-page .repo-container p {
+  margin-bottom: 3rem !important;
+  padding: 0 14rem;
+}
+.repositorio-institucional-page .repo-container form {
+  margin-bottom: 3rem !important;
+}
+.repositorio-institucional-page .repo-container form input {
+  width: 400px;
+  margin-right: 0.785rem;
+}
+.repositorio-institucional-page .repo-container form button {
+  padding: 0.5rem 0.7rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.repositorio-institucional-page .repo-container form button img {
+  width: 20px;
+  height: 20px;
+}
+.repositorio-institucional-page .repo-container .pagination {
+  margin-top: 6rem;
+}
+.repositorio-institucional-page .repo-container .pagination .page-item .page-link {
+  font-size: 1.5rem;
+  border: 0 !important;
+  font-weight: bold;
+  color: #1F1A3B;
+}
+.repositorio-institucional-page .repo-container .pagination .page-item .page-link.active {
+  background-color: transparent;
+  color: #A1D8F2;
+}
+
+@media screen and (max-width: 1200px) {
+  .repositorio-institucional-page .repo-container p {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .repositorio-institucional-page .repo-container .repo .item {
+    flex: 0 0 47.7%;
+  }
+  .repositorio-institucional-page .repo-container p {
+    padding: 0;
+  }
+  .repositorio-institucional-page .repo-container form input {
+    width: 50%;
+  }
+  .repositorio-institucional-page .repo-container .pagination {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .repositorio-institucional-page .repo-container .repo .item {
+    flex: 0 0 100%;
+  }
+  .repositorio-institucional-page .repo-container form input {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .repositorio-institucional-page .repo-container form {
+    margin-bottom: 3rem !important;
+  }
+  .repositorio-institucional-page .repo-container form input {
+    margin-right: 0.4rem;
+  }
+  .repositorio-institucional-page .repo-container form input::-ms-input-placeholder {
+    font-size: 0.875rem !important;
+  }
+  .repositorio-institucional-page .repo-container form input::placeholder {
+    font-size: 0.875rem !important;
+  }
 }
