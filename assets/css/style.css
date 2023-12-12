@@ -52,6 +52,7 @@ header .info-ieproes ul {
   list-style: none;
   padding: 0;
   margin-bottom: 0;
+  font-family: Glacial-Indifference;
 }
 header .info-ieproes ul li {
   display: inline-block;
@@ -82,6 +83,19 @@ header nav.navbar .navbar-brand img {
 }
 header nav.navbar .navbar-nav .nav-item .nav-link {
   font-size: 0.875rem;
+  text-wrap: wrap;
+  width: 120px;
+  text-align: center;
+  line-height: 1rem;
+  padding: 0;
+}
+header nav.navbar .navbar-nav .nav-item .dropdown {
+  width: 110px;
+  display: flex;
+  align-items: flex-end;
+}
+header .dropdown-toggle::after {
+  display: none !important;
 }
 
 footer {
@@ -280,9 +294,6 @@ footer .rights p {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: calc(100% - 0px);
-}
-.home-page #conoce-ieproes .content {
-  gap: 80px;
 }
 .home-page #conoce-ieproes .content .text-content {
   width: 500px;
