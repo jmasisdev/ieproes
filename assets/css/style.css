@@ -555,7 +555,7 @@ footer .rights p {
 .repositorio-institucional-page .repo-container .repo .item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex: 0 0 30.33%;
   border: 1px solid #A1D8F2;
