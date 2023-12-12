@@ -5,6 +5,7 @@
 html, body {
   background-color: #fff;
   font-family: Glacial-Indifference !important;
+  color: #1D1D1B !important;
   height: 100%;
 }
 
@@ -32,6 +33,22 @@ img {
   background-color: #1F1A3B !important;
 }
 
+.bg-skyBlue2 {
+  background-color: #A1D8F2 !important;
+}
+
+.text-blue {
+  color: #1F1A3B !important;
+}
+
+.text-skyBlue2 {
+  color: #A1D8F2 !important;
+}
+
+.text-aqua {
+  color: #30B8C7 !important;
+}
+
 .text-dark-gray {
   color: #7D7979 !important;
 }
@@ -42,6 +59,25 @@ img {
     padding-right: 40px;
   }
 }
+.cta {
+  display: block;
+  border: 0 !important;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer !important;
+  text-decoration: none;
+  background-color: #1F1A3B;
+  color: #A1D8F2;
+}
+
+.ebook-btn {
+  background: #A1D8F2;
+  color: #1F1A3B;
+}
+
 header {
   background-color: transparent;
   position: fixed;
@@ -96,6 +132,11 @@ header nav.navbar .navbar-nav .nav-item .dropdown {
 }
 header .dropdown-toggle::after {
   display: none !important;
+}
+
+main {
+  padding-top: 12rem;
+  padding-bottom: 8.125rem;
 }
 
 footer {
@@ -289,6 +330,9 @@ footer .rights p {
   src: url(../fonts/glacial-indifference/GlacialIndifference-Bold.otf);
   font-weight: 700;
 }
+.home-page main {
+  padding-top: 0;
+}
 .home-page #destacado {
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -335,7 +379,6 @@ footer .rights p {
 }
 .home-page #post {
   padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 .home-page #post h2 {
   font-size: 3rem;
@@ -422,10 +465,6 @@ footer .rights p {
     border-radius: 2rem;
     height: 200px;
   }
-  .home-page #post {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
   .home-page #post h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
@@ -455,10 +494,6 @@ footer .rights p {
     width: 100%;
     height: 100%;
   }
-  .home-page #post {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
   .home-page #post h2 {
     font-size: 2rem;
     margin-bottom: 3rem;
@@ -481,4 +516,36 @@ footer .rights p {
   .home-page #oferta-academica .info img {
     border-radius: 3rem;
   }
+}
+.repo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.repo .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 30.33%;
+  border: 1px solid #A1D8F2;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  padding: 2rem;
+}
+.repo .item img {
+  width: 280px;
+  height: 300px;
+  object-fit: contain;
+  object-position: top center;
+  margin-bottom: 1rem;
+}
+.repo .item .headline {
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+.repo .item .category {
+  font-size: 1rem;
 }
