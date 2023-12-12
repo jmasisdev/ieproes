@@ -72,6 +72,8 @@ img {
   text-decoration: none;
   background-color: #1F1A3B;
   color: #A1D8F2;
+  width: 104.3px;
+  height: 37px;
 }
 
 .ebook-btn {
@@ -84,6 +86,17 @@ img {
   margin-top: -6px !important;
   margin-bottom: 0 !important;
   margin-right: 0.4rem;
+}
+
+.pagination .page-item .page-link {
+  font-size: 1.5rem;
+  border: 0 !important;
+  font-weight: bold;
+  color: #1F1A3B;
+}
+.pagination .page-item .page-link.active {
+  background-color: transparent;
+  color: #A1D8F2;
 }
 
 input[type=text], input[type=submit], button[type=submit] {
@@ -176,6 +189,9 @@ footer {
 footer a {
   color: #fff !important;
 }
+footer .sedes {
+  margin-bottom: 8.125rem;
+}
 footer .rights {
   background-color: #1F1A3B;
   color: #fff;
@@ -184,7 +200,6 @@ footer .rights {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-top: 8.125rem;
 }
 footer .rights p {
   font-size: 1.6rem;
@@ -601,16 +616,6 @@ footer .rights p {
 .repositorio-institucional-page .repo-container .pagination {
   margin-top: 6rem;
 }
-.repositorio-institucional-page .repo-container .pagination .page-item .page-link {
-  font-size: 1.5rem;
-  border: 0 !important;
-  font-weight: bold;
-  color: #1F1A3B;
-}
-.repositorio-institucional-page .repo-container .pagination .page-item .page-link.active {
-  background-color: transparent;
-  color: #A1D8F2;
-}
 
 @media screen and (max-width: 1200px) {
   .repositorio-institucional-page .repo-container p {
@@ -650,6 +655,114 @@ footer .rights p {
     font-size: 0.875rem !important;
   }
   .repositorio-institucional-page .repo-container form input::placeholder {
+    font-size: 0.875rem !important;
+  }
+}
+.repositorio-institucional-post-page .repo-container .repo-info {
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+.repositorio-institucional-post-page .repo-container .repo-info img {
+  width: 347px;
+  height: auto;
+}
+.repositorio-institucional-post-page .repo-container .repo-info a {
+  margin: 0 auto;
+}
+.repositorio-institucional-post-page .repo-container .repo-info .headline {
+  color: #30B8C7;
+}
+.repositorio-institucional-post-page .repo-container .repo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.repositorio-institucional-post-page .repo-container .repo .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 30.33%;
+  border: 1px solid #A1D8F2;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  padding: 2rem;
+}
+.repositorio-institucional-post-page .repo-container .repo .item img {
+  width: 280px;
+  height: 300px;
+  object-fit: contain;
+  object-position: top center;
+  margin-bottom: 1rem;
+}
+.repositorio-institucional-post-page .repo-container .repo .item .headline {
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+.repositorio-institucional-post-page .repo-container .repo .item .category {
+  font-size: 1rem;
+}
+.repositorio-institucional-post-page .repo-container p {
+  margin-bottom: 3rem !important;
+  padding: 0 14rem;
+}
+.repositorio-institucional-post-page .repo-container form {
+  margin-bottom: 3rem !important;
+}
+.repositorio-institucional-post-page .repo-container form input {
+  width: 400px;
+  margin-right: 0.785rem;
+}
+.repositorio-institucional-post-page .repo-container form button {
+  padding: 0.5rem 0.7rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.repositorio-institucional-post-page .repo-container form button img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .repositorio-institucional-post-page .repo-container p {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .repositorio-institucional-post-page .repo-container .repo .item {
+    flex: 0 0 47.7%;
+  }
+  .repositorio-institucional-post-page .repo-container p {
+    padding: 0;
+  }
+  .repositorio-institucional-post-page .repo-container form input {
+    width: 50%;
+  }
+  .repositorio-institucional-post-page .repo-container .pagination {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .repositorio-institucional-post-page .repo-container .repo .item {
+    flex: 0 0 100%;
+  }
+  .repositorio-institucional-post-page .repo-container form input {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .repositorio-institucional-post-page .repo-container form {
+    margin-bottom: 3rem !important;
+  }
+  .repositorio-institucional-post-page .repo-container form input {
+    margin-right: 0.4rem;
+  }
+  .repositorio-institucional-post-page .repo-container form input::-ms-input-placeholder {
+    font-size: 0.875rem !important;
+  }
+  .repositorio-institucional-post-page .repo-container form input::placeholder {
     font-size: 0.875rem !important;
   }
 }
