@@ -218,7 +218,7 @@ footer .rights p {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 575px) {
   footer .rights p {
     font-size: 0.875rem;
   }
@@ -666,11 +666,24 @@ footer .rights p {
   width: 347px;
   height: auto;
 }
+.repositorio-institucional-post-page .repo-container .repo-info .cta {
+  margin-top: 3rem;
+}
 .repositorio-institucional-post-page .repo-container .repo-info a {
   margin: 0 auto;
 }
 .repositorio-institucional-post-page .repo-container .repo-info .headline {
   color: #30B8C7;
+  padding: 0 1rem;
+}
+.repositorio-institucional-post-page .repo-container .repo-info p {
+  padding: 0;
+}
+.repositorio-institucional-post-page .repo-container .repo-info .info .meta {
+  width: 15%;
+}
+.repositorio-institucional-post-page .repo-container .repo-info .info .data {
+  width: 85%;
 }
 .repositorio-institucional-post-page .repo-container .repo {
   display: flex;
@@ -750,6 +763,11 @@ footer .rights p {
   }
   .repositorio-institucional-post-page .repo-container form input {
     width: 80%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .repositorio-institucional-post-page .repo-container .repo-info .info .meta, .repositorio-institucional-post-page .repo-container .repo-info .info .data {
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
