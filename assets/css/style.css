@@ -67,13 +67,14 @@ img {
 .cta {
   display: block;
   border: 0 !important;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   text-transform: uppercase;
   text-align: center;
   font-family: Moonrising;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+  line-height: 1.35rem;
   font-weight: bold;
   cursor: pointer !important;
   text-decoration: none;
@@ -90,11 +91,29 @@ img {
 .ebook-btn img {
   width: 16px !important;
   height: auto !important;
-  margin-top: -6px !important;
+  margin-top: 0 !important;
   margin-bottom: 0 !important;
   margin-right: 0.4rem;
 }
 
+.cta-group .cta {
+  width: 170px;
+  height: 48px;
+  font-family: Glacial-Indifference;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 100;
+  text-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .cta-group .cta {
+    width: 100%;
+  }
+}
 .pagination .page-item .page-link {
   font-size: 1.5rem;
   background-color: transparent;
@@ -828,17 +847,6 @@ footer .rights p {
 .oferta-academica-page .info-container > div {
   flex: 1;
 }
-.oferta-academica-page .info-container .cta-group .cta {
-  width: 160px;
-  height: 48px;
-  font-family: Glacial-Indifference;
-  font-weight: 100;
-  line-height: 1rem;
-  text-wrap: wrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .oferta-academica-page .info-container p {
   text-align: justify;
 }
@@ -852,10 +860,5 @@ footer .rights p {
   }
   .oferta-academica-page .info-container > div {
     flex: auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  .oferta-academica-page .info-container .cta-group .cta {
-    width: 100%;
   }
 }
