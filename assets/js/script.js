@@ -30,6 +30,7 @@ thumbnails.forEach((thumbnail, index) => {
 
 iniciarCarrusel();
 
+// Gallery filter
 document.addEventListener('DOMContentLoaded', function () {
   const filterButtons = document.querySelectorAll('.filter-button');
   const portfolioItems = document.querySelectorAll('.item');

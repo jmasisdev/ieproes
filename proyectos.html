@@ -142,7 +142,7 @@
 
       <div class="container">
 
-        <section class=" repo-container text-center">
+        <section class="repo text-center">
           <div class="d-flex flex-column flex-lg-row">
             <div class="flex-fill">
               <h2 class="headline mb-3">Repositorio institucional</h2>
@@ -158,23 +158,101 @@
             </div>
           </div>
 
-          <!-- projects filter -->
-          <div class="filter-buttons">
-            <button class="filter-button" data-filter="all">Todos</button>
-            <button class="filter-button" data-filter="web">Web</button>
-            <button class="filter-button" data-filter="mobile">Mobile</button>
-            <!-- Agrega más botones según tus categorías -->
+          <div class="d-flex align-items-center justify-content-center flex-column flex-md-row filter-wrapper">
+            <div><span class="text-uppercase filter-title">Proyectos de:</span></div>
+            <div class="filter-buttons">
+              <button class="filter-button" title="San Salvador" aria-label="San Salvador" data-filter="ss">San Salvador</button>
+              <button class="filter-button" title="Santa Ana" aria-label="Santa Ana" data-filter="sa">Santa Ana</button>
+              <button class="filter-button" title="San Miguel" aria-label="San Miguel" data-filter="sm">San Miguel</button>
+              <button class="filter-button active" title="Todos" aria-label="Todos" data-filter="all">Todos</button>
+            </div>
           </div>
 
-          <div class="portfolio">
-            <div class="item" data-category="web">
-              <img src="imagen1.jpg" alt="Proyecto 1">
-            </div>
-            <div class="item" data-category="mobile">
-              <img src="imagen2.jpg" alt="Proyecto 2">
-            </div>
-            <!-- Agrega más elementos según tus proyectos -->
-          </div>
+          <div class="three-column-grid portfolio">
+            <div class="item" data-category="ss">
+              <img src="./assets/img/investigaciones/portada-01.jpeg"
+                alt="Vivencias de los estuciantes de la carrea de enfermería durante la emergencia del COVI-19">
+              <h3 class="caption text-aqua">Vivencias de los estuciantes de la
+                carrea de enfermería durante la emergencia del COVI-19</h3>
+              <span class="category">Áreas: Investigación, Salud</span>
+
+              <div class="d-flex gap-3 mt-3">
+                <div class="flex-fill"><a href="#" class="cta ebook-btn">
+                    <img src="./assets/img/iconos/ebook.svg" alt="ebook">e-book</a></div>
+                <div class="flex-fill"><a href="#" class="cta">ver más</a></div>
+              </div>
+            </div><!-- item -->
+
+            <div class="item" data-category="sa">
+              <img src="./assets/img/investigaciones/portada-02.jpeg"
+                alt="Contaminación hídrica y explotación pétrea en la Cuenca del río Jiboa">
+              <h3 class="caption text-aqua">Contaminación hídrica y explotación
+                pétrea en la Cuenca del río Jiboa</h3>
+              <span class="category">Áreas: Investigación, Medio Ambiente</span>
+              <div class="d-flex gap-3 mt-3">
+                <div class="flex-fill"><a href="#" class="cta ebook-btn"><img
+                      src="./assets/img/iconos/ebook.svg" alt="ebook">e-book</a></div>
+                <div class="flex-fill"><a href="#" class="cta">ver más</a></div>
+              </div>
+            </div><!-- item -->
+
+            <div class="item" data-category="sm">
+              <img src="./assets/img/investigaciones/portada-03.jpeg"
+                alt="Caracterización de la situación de violencia y desigualdad de género en las mujeres de la zona comercial  del mercado municipal “	El Colón,” del Municipio de Santa Ana">
+              <h3 class="caption text-aqua">Caracterización de la situación de
+                violencia y desigualdad de género en las mujeres de la zona
+                comercial del mercado municipal “ El Colón,” del Municipio de
+                Santa Ana</h3>
+              <span class="category">Áreas: Investigación, Humanidad</span>
+              <div class="d-flex gap-3 mt-3">
+                <div class="flex-fill"><a href="#" class="cta ebook-btn"><img
+                      src="./assets/img/iconos/ebook.svg" alt="ebook">e-book</a></div>
+                <div class="flex-fill"><a href="#" class="cta">ver más</a></div>
+              </div>
+            </div><!-- item -->
+
+            <div class="item" data-category="ss">
+              <img src="./assets/img/investigaciones/portada-04.jpeg"
+                alt="Cuidado familiar y su influencia en la salud de ADULTOS MAYORES en comunidades del departamento de Morazán">
+              <h3 class="caption text-aqua">Cuidado familiar y su influencia en
+                la salud de ADULTOS MAYORES en comunidades del departamento de
+                Morazán</h3>
+              <span class="category">Áreas: Investigación, Salud</span>
+              <div class="d-flex gap-3 mt-3">
+                <div class="flex-fill"><a href="#" class="cta ebook-btn"><img
+                      src="./assets/img/iconos/ebook.svg" alt="ebook">e-book</a></div>
+                <div class="flex-fill"><a href="#" class="cta">ver más</a></div>
+              </div>
+            </div><!-- item -->
+
+            <div class="item" data-category="sm">
+              <img src="./assets/img/investigaciones/portada-05.jpeg"
+                alt="Factores de riesgo que predisponen al padecimiento de la enfermedad renal crónica en habitaciones del municipio de Quelepa, San Miguel">
+              <h3 class="caption text-aqua">Factores de riesgo que predisponen
+                al padecimiento de la enfermedad renal crónica en habitaciones
+                del municipio de Quelepa, San Miguel</h3>
+              <span class="category">Áreas: Investigación, Salud</span>
+              <div class="d-flex gap-3 mt-3">
+                <div class="flex-fill"><a href="#" class="cta ebook-btn"><img
+                      src="./assets/img/iconos/ebook.svg" alt="ebook">e-book</a></div>
+                <div class="flex-fill"><a href="#" class="cta">ver más</a></div>
+              </div>
+            </div><!-- item -->
+
+            <div class="item" data-category="ss">
+              <img src="./assets/img/investigaciones/portada-06.jpeg"
+                alt="Caracterización de Estudiantes del Instituto Especializado de Profesionales de la Salud IEPROES">
+              <h3 class="caption text-aqua">Caracterización de Estudiantes del
+                Instituto Especializado de Profesionales de la Salud IEPROES</h3>
+              <span class="category">Áreas: Investigación, Humanidad</span>
+              <div class="d-flex gap-3 mt-3">
+                <div class="flex-fill"><a href="#" class="cta ebook-btn"><img
+                      src="./assets/img/iconos/ebook.svg" alt="ebook">e-book</a></div>
+                <div class="flex-fill"><a href="#" class="cta">ver más</a></div>
+              </div>
+            </div><!-- item -->
+          </div><!-- three-column-grid -->
+
           <!-- projects filter -->
 
           <nav aria-label="Page navigation example">
