@@ -34,8 +34,16 @@ img {
   background-color: #1F1A3B !important;
 }
 
+.bg-skyBlue {
+  background-color: #6AC3EF !important;
+}
+
 .bg-skyBlue2 {
   background-color: #A1D8F2 !important;
+}
+
+.bg-skyBlue3 {
+  background-color: #d4f0fb !important;
 }
 
 .text-blue {
@@ -421,6 +429,39 @@ img {
     height: 180px;
   }
 }
+.cover-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 30.33%;
+  background-color: transparent;
+  border: 1px solid #A1D8F2;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  padding: 2rem;
+}
+.cover-wrapper img {
+  width: 280px;
+  height: 300px;
+  object-fit: contain;
+  object-position: top center;
+  margin-bottom: 1rem;
+}
+.cover-wrapper .caption {
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+.cover-wrapper .category {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .item {
+    flex: 0 0 47.7%;
+  }
+}
 .filter-title {
   font-size: 1.625rem;
 }
@@ -508,26 +549,6 @@ img {
   justify-content: center;
   align-items: center;
   flex: 0 0 30.33%;
-  background-color: transparent;
-  border: 1px solid #A1D8F2;
-  border-top-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-  padding: 2rem;
-}
-.three-column-grid .item img {
-  width: 280px;
-  height: 300px;
-  object-fit: contain;
-  object-position: top center;
-  margin-bottom: 1rem;
-}
-.three-column-grid .item .caption {
-  font-size: 1.125rem;
-  line-height: 1.3rem;
-  margin-bottom: 1rem;
-}
-.three-column-grid .item .category {
-  font-size: 1rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -981,6 +1002,9 @@ footer .rights p {
 .repositorio-institucional-post-page .descripcion .data {
   width: 85%;
 }
+.repositorio-institucional-post-page .descripcion a {
+  max-width: 120px;
+}
 
 @media screen and (max-width: 767px) {
   .repositorio-institucional-post-page .descripcion img {
@@ -1073,4 +1097,22 @@ footer .rights p {
   .mensaje-direccion-page .divisor {
     right: 0;
   }
+}
+.reglamentos-page .cover-wrapper {
+  width: 370px;
+}
+.reglamentos-page .menu-reglamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.reglamentos-page .menu-reglamento .cta {
+  font-size: 1.125rem;
+  padding: 1.5rem 0;
+  width: 300px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 40px;
 }
