@@ -537,13 +537,13 @@ img {
   flex: 1;
 }
 
-.three-column-grid {
+.three-columns-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
 }
-.three-column-grid .item {
+.three-columns-grid .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -551,8 +551,27 @@ img {
   flex: 0 0 30.33%;
 }
 
+.four-columns-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.four-columns-grid .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 22.4%;
+}
+
+@media screen and (max-width: 1400px) {
+  .four-columns-grid .item {
+    flex: 0 0 31.33%;
+  }
+}
 @media screen and (max-width: 992px) {
-  .three-column-grid .item {
+  .three-column-grid .item,
+  .four-columns-grid .item {
     flex: 0 0 47.7%;
   }
 }
@@ -564,7 +583,8 @@ img {
   .two-columns-wrapper > div {
     flex: auto;
   }
-  .three-column-grid .item {
+  .three-column-grid .item,
+  .four-columns-grid .item {
     flex: 0 0 100%;
   }
 }
@@ -1098,6 +1118,10 @@ footer .rights p {
     right: 0;
   }
 }
+.investigadores-page p {
+  text-align: justify;
+}
+
 .reglamentos-page .cover-wrapper {
   width: 370px;
 }
@@ -1115,4 +1139,41 @@ footer .rights p {
   border-top-right-radius: 40px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 40px;
+}
+
+.filosofia-institucional-page .cover-wrapper {
+  border: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 5rem;
+}
+.filosofia-institucional-page .item {
+  min-height: 280px;
+}
+.filosofia-institucional-page .valores {
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  border: 2px solid #6AC3EF;
+  padding: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .filosofia-institucional-page .item {
+    min-height: 248px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .filosofia-institucional-page .valores {
+    padding: 2rem;
+  }
+  .filosofia-institucional-page .item {
+    width: 100%;
+    min-height: 200px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .filosofia-institucional-page .item {
+    min-height: auto;
+  }
 }
