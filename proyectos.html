@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <title>Proyectos - IEPROES</title>
   </head>
-  <body class="repositorio-institucional-post-page">
+  <body class="proyectos-page">
     <header>
       <div class="info-ieproes bg-blue d-flex p-3">
         <div class="flex-fill">
@@ -140,31 +140,34 @@
 
     <main>
 
-      <div class="container">
+      <section class="repo text-center">
+        <div class="container">
 
-        <section class="repo text-center">
           <div class="d-flex flex-column flex-lg-row">
+            <div class="flex-fill"><h2 class="headline mb-3">Repositorio
+                institucional</h2></div>
             <div class="flex-fill">
-              <h2 class="headline mb-3">Repositorio institucional</h2>
-            </div>
-
-            <div class="flex-fill">
-              <form action>
-                <input type="text"
-                  placeholder="Nombre, autor, categoría, fecha....." name id>
+              <form class="search mb-5" action>
+                <input class="w-75" type="text"
+                  placeholder="Nombre, autor, categoría, fecha....." name>
                 <button type="submit" title="Buscar" aria-label="Buscar"><img
                     src="./assets/img/iconos/search.svg" alt="Buscar"></button>
               </form>
             </div>
           </div>
 
-          <div class="d-flex align-items-center justify-content-center flex-column flex-md-row filter-wrapper">
+          <div
+            class="d-flex align-items-center justify-content-center flex-column flex-lg-row filter-wrapper">
             <div><span class="text-uppercase filter-title">Proyectos de:</span></div>
             <div class="filter-buttons">
-              <button class="filter-button" title="San Salvador" aria-label="San Salvador" data-filter="ss">San Salvador</button>
-              <button class="filter-button" title="Santa Ana" aria-label="Santa Ana" data-filter="sa">Santa Ana</button>
-              <button class="filter-button" title="San Miguel" aria-label="San Miguel" data-filter="sm">San Miguel</button>
-              <button class="filter-button active" title="Todos" aria-label="Todos" data-filter="all">Todos</button>
+              <button class="filter-button" title="San Salvador"
+                aria-label="San Salvador" data-filter="ss">San Salvador</button>
+              <button class="filter-button" title="Santa Ana"
+                aria-label="Santa Ana" data-filter="sa">Santa Ana</button>
+              <button class="filter-button" title="San Miguel"
+                aria-label="San Miguel" data-filter="sm">San Miguel</button>
+              <button class="filter-button active" title="Todos"
+                aria-label="Todos" data-filter="all">Todos</button>
             </div>
           </div>
 
@@ -268,9 +271,9 @@
             </ul>
           </nav>
 
-        </section>
+        </div><!-- container -->
 
-      </div><!-- container -->
+      </section>
 
     </main>
 

@@ -65,6 +65,138 @@ img {
     padding-right: 40px;
   }
 }
+.m-6 {
+  margin: 3.5rem !important;
+}
+
+.mt-6 {
+  margin-top: 3.5rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 3.5rem !important;
+}
+
+.mx-6 {
+  margin-left: 3.5rem !important;
+  margin-right: 3.5rem !important;
+}
+
+.my-6 {
+  margin-top: 3.5rem !important;
+  margin-bottom: 3.5rem !important;
+}
+
+.m-7 {
+  margin: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 4rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 4rem !important;
+}
+
+.mx-7 {
+  margin-left: 4rem !important;
+  margin-right: 4rem !important;
+}
+
+.my-7 {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+}
+
+.p-6 {
+  padding: 3.5rem !important;
+}
+
+.pt-6 {
+  padding-top: 3.5rem !important;
+}
+
+.pb-6 {
+  padding-bottom: 3.5rem !important;
+}
+
+.px-6 {
+  padding-left: 3.5rem !important;
+  padding-right: 3.5rem !important;
+}
+
+.py-6 {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+.p-7 {
+  padding: 4rem !important;
+}
+
+.pt-7 {
+  padding-top: 4rem !important;
+}
+
+.pb-7 {
+  padding-bottom: 4rem !important;
+}
+
+.px-7 {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+
+.py-7 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.p-8 {
+  padding: 4.5rem !important;
+}
+
+.pt-8 {
+  padding-top: 4.5rem !important;
+}
+
+.pb-8 {
+  padding-bottom: 4.5rem !important;
+}
+
+.px-8 {
+  padding-left: 4.5rem !important;
+  padding-right: 4.5rem !important;
+}
+
+.py-8 {
+  padding-top: 4.5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+
+.p-9 {
+  padding: 5rem !important;
+}
+
+.pt-9 {
+  padding-top: 5rem !important;
+}
+
+.pb-9 {
+  padding-bottom: 5rem !important;
+}
+
+.px-9 {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+.py-9 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
 .cta {
   display: block;
   border: 0 !important;
@@ -215,16 +347,24 @@ img {
   left: -9999px;
 }
 
+@media screen and (max-width: 992px) {
+  .filter-title, .filter-buttons .filter-button {
+    font-size: 1.4rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .filter-title, .filter-buttons .filter-button {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .filter-title, .filter-buttons .filter-button {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .filter-title, .filter-buttons .filter-button {
     font-size: 0.9rem;
-  }
-  .filter-buttons {
-    text-align: center;
-    margin: 20px;
-  }
-  .filter-buttons .filter-button {
-    padding: 0 10px;
   }
 }
 .three-column-grid {
@@ -270,17 +410,49 @@ img {
     flex: 0 0 100%;
   }
 }
-input[type=text], input[type=submit], button[type=submit] {
+form.search input {
+  margin-right: 0.785rem;
+}
+form.search button[type=submit] {
+  width: 45px;
+  height: 40px;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+form button[type=submit] {
+  border: 0 !important;
+}
+form button[type=submit] img {
+  width: 20px;
+  height: 20px;
+}
+form input[type=text],
+form input[type=submit] {
   border: 0 !important;
   border-top-left-radius: 1.875rem;
   border-bottom-right-radius: 1.875rem;
 }
-
-input[type=text] {
+form input[type=text] {
   background-color: #EDECED;
   padding: 0.5rem 1.75rem;
 }
 
+@media screen and (max-width: 767px) {
+  form.search input {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  form.search input {
+    margin-right: 0.4rem;
+  }
+  form.search input::-ms-input-placeholder {
+    font-size: 0.875rem !important;
+  }
+  form.search input::placeholder {
+    font-size: 0.875rem !important;
+  }
+}
 header {
   background-color: transparent;
   position: fixed;
@@ -733,160 +905,25 @@ footer .rights p {
     border-radius: 3rem;
   }
 }
-.repositorio-institucional-category-page .repo p {
-  margin-bottom: 3rem !important;
-  padding: 0 14rem;
+.repositorio-institucional-post-page .descripcion img {
+  max-width: 347px;
 }
-.repositorio-institucional-category-page .repo form {
-  margin-bottom: 3rem !important;
-}
-.repositorio-institucional-category-page .repo form input {
-  width: 400px;
-  margin-right: 0.785rem;
-}
-.repositorio-institucional-category-page .repo form button {
-  padding: 0.5rem 0.7rem;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-.repositorio-institucional-category-page .repo form button img {
-  width: 20px;
-  height: 20px;
-}
-
-@media screen and (max-width: 1200px) {
-  .repositorio-institucional-category-page .repo p {
-    padding: 0 2rem;
-  }
-}
-@media screen and (max-width: 992px) {
-  .repositorio-institucional-category-page .repo .repo .item {
-    flex: 0 0 47.7%;
-  }
-  .repositorio-institucional-category-page .repo p {
-    padding: 0;
-  }
-  .repositorio-institucional-category-page .repo form input {
-    width: 50%;
-  }
-  .repositorio-institucional-category-page .repo .pagination {
-    margin-top: 3rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .repositorio-institucional-category-page .repo .repo .item {
-    flex: 0 0 100%;
-  }
-  .repositorio-institucional-category-page .repo form input {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .repositorio-institucional-category-page .repo form {
-    margin-bottom: 3rem !important;
-  }
-  .repositorio-institucional-category-page .repo form input {
-    margin-right: 0.4rem;
-  }
-  .repositorio-institucional-category-page .repo form input::-ms-input-placeholder {
-    font-size: 0.875rem !important;
-  }
-  .repositorio-institucional-category-page .repo form input::placeholder {
-    font-size: 0.875rem !important;
-  }
-}
-.repositorio-institucional-post-page .repo .info .meta {
+.repositorio-institucional-post-page .descripcion .meta {
   width: 15%;
 }
-.repositorio-institucional-post-page .repo .info .data {
+.repositorio-institucional-post-page .descripcion .data {
   width: 85%;
 }
-.repositorio-institucional-post-page .repo .repo-info {
-  gap: 3rem;
-  margin-bottom: 4rem;
-}
-.repositorio-institucional-post-page .repo .repo-info img {
-  max-width: 347px;
-  height: auto;
-}
-.repositorio-institucional-post-page .repo .repo-info .cta {
-  margin-top: 3rem;
-}
-.repositorio-institucional-post-page .repo .repo-info a {
-  margin: 0 auto;
-}
-.repositorio-institucional-post-page .repo .repo-info p {
-  padding: 0;
-}
-.repositorio-institucional-post-page .repo p {
-  margin-bottom: 3rem !important;
-  padding: 0 14rem;
-}
-.repositorio-institucional-post-page .repo form {
-  margin-bottom: 3rem !important;
-}
-.repositorio-institucional-post-page .repo form input {
-  width: 400px;
-  margin-right: 0.785rem;
-}
-.repositorio-institucional-post-page .repo form button {
-  padding: 0.5rem 0.7rem;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-.repositorio-institucional-post-page .repo form button img {
-  width: 20px;
-  height: 20px;
-}
 
-@media screen and (max-width: 1200px) {
-  .repositorio-institucional-post-page .repo-container p {
-    padding: 0 2rem;
-  }
-}
-@media screen and (max-width: 992px) {
-  .repositorio-institucional-post-page .repo-container .repo .item {
-    flex: 0 0 47.7%;
-  }
-  .repositorio-institucional-post-page .repo-container p {
-    padding: 0;
-  }
-  .repositorio-institucional-post-page .repo-container form input {
-    width: 50%;
-  }
-  .repositorio-institucional-post-page .repo-container .pagination {
-    margin-top: 3rem;
-  }
-}
 @media screen and (max-width: 767px) {
-  .repositorio-institucional-post-page .repo .repo-info img {
+  .repositorio-institucional-post-page .descripcion img {
     max-width: 100%;
-  }
-  .repositorio-institucional-post-page .repo .item {
-    flex: 0 0 100%;
-  }
-  .repositorio-institucional-post-page .repo form input {
-    width: 80%;
   }
 }
 @media screen and (max-width: 575px) {
-  .repositorio-institucional-post-page .repo .repo-info .meta,
-  .repositorio-institucional-post-page .repo .repo-info .data {
+  .repositorio-institucional-post-page .descripcion .meta,
+  .repositorio-institucional-post-page .descripcion .data {
     width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .repositorio-institucional-post-page .repo form {
-    margin-bottom: 3rem !important;
-  }
-  .repositorio-institucional-post-page .repo form input {
-    margin-right: 0.4rem;
-  }
-  .repositorio-institucional-post-page .repo form input::-ms-input-placeholder {
-    font-size: 0.875rem !important;
-  }
-  .repositorio-institucional-post-page .repo form input::placeholder {
-    font-size: 0.875rem !important;
   }
 }
 .oferta-academica-page .info-container {
