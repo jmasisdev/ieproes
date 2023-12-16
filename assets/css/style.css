@@ -127,6 +127,28 @@ img {
   margin-bottom: 4rem !important;
 }
 
+.m-8 {
+  margin: 4.5rem !important;
+}
+
+.mt-8 {
+  margin-top: 4.5rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 4.5rem !important;
+}
+
+.mx-8 {
+  margin-left: 4.5rem !important;
+  margin-right: 4.5rem !important;
+}
+
+.my-8 {
+  margin-top: 4.5rem !important;
+  margin-bottom: 4.5rem !important;
+}
+
 .p-6 {
   padding: 3.5rem !important;
 }
@@ -383,6 +405,14 @@ img {
     font-size: 0.9rem;
   }
 }
+.two-columns-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.two-columns-wrapper > div {
+  flex: 1;
+}
+
 .three-column-grid {
   display: flex;
   flex-wrap: wrap;
@@ -423,6 +453,13 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
+  .two-columns-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .two-columns-wrapper > div {
+    flex: auto;
+  }
   .three-column-grid .item {
     flex: 0 0 100%;
   }
