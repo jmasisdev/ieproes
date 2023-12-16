@@ -1005,3 +1005,28 @@ footer .rights p {
     flex: auto;
   }
 }
+.proceso-nuevo-ingreso-page .cta {
+  display: flex;
+  flex-direction: row;
+  line-height: 1rem;
+  width: 220px;
+}
+.proceso-nuevo-ingreso-page .cta img {
+  width: 34px;
+  height: 34px;
+  margin-right: 0.4rem;
+}
+
+@media screen and (max-width: 767px) {
+  .proceso-nuevo-ingreso-page .cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    width: auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .proceso-nuevo-ingreso-page .cta {
+    flex-direction: row;
+  }
+}
