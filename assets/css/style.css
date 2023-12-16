@@ -388,7 +388,7 @@ img {
 .three-column-grid .item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex: 0 0 30.33%;
   background-color: transparent;
