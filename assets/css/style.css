@@ -59,6 +59,20 @@ img {
   font-family: Moonrising !important;
 }
 
+.date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.875rem;
+}
+.date img {
+  width: 24px !important;
+  height: 24px !important;
+  margin-right: 0.275rem;
+  margin-bottom: 0 !important;
+  object-fit: initial !important;
+  object-position: initial !important;
+}
+
 @media screen and (max-width: 1200px) {
   .text-content {
     padding-left: 40px;
@@ -200,7 +214,7 @@ img {
 .cta {
   display: block;
   border: 0 !important;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   text-transform: uppercase;
@@ -213,8 +227,6 @@ img {
   text-decoration: none;
   background-color: #1F1A3B;
   color: #A1D8F2;
-  width: 104.3px;
-  height: 37px;
 }
 
 .ebook-btn {
@@ -379,6 +391,7 @@ img {
   justify-content: space-between;
   align-items: center;
   flex: 0 0 30.33%;
+  background-color: transparent;
   border: 1px solid #A1D8F2;
   border-top-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
@@ -724,7 +737,7 @@ footer .rights p {
 .home-page #destacado {
   min-height: 100vh;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position-y: calc(100% - 0px);
 }
 .home-page #conoce-ieproes .content .text-content {
@@ -784,16 +797,6 @@ footer .rights p {
   padding: 2rem 3rem;
   margin-bottom: 0;
 }
-.home-page #post .post-wrapper figure .date {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.875rem;
-}
-.home-page #post .post-wrapper figure .date img {
-  width: 24px;
-  height: 24px;
-  margin-right: 0.275rem;
-}
 .home-page #post .post-wrapper figure .headline {
   font-family: Moonrising !important;
   font-size: 1rem;
@@ -823,6 +826,11 @@ footer .rights p {
 }
 
 @media screen and (max-width: 992px) {
+  .home-page #destacado {
+    background-size: 100%;
+    min-height: 470px;
+    margin-bottom: 2.5rem;
+  }
   .home-page #conoce-ieproes .content {
     gap: 40px;
   }
@@ -905,6 +913,15 @@ footer .rights p {
     border-radius: 3rem;
   }
 }
+.proyectos-page .three-column-grid .item {
+  background-color: #EDECED;
+  border: 0 !important;
+  border-top-left-radius: 0;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 5rem;
+}
+
 .repositorio-institucional-post-page .descripcion img {
   max-width: 347px;
 }
