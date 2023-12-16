@@ -73,6 +73,10 @@ img {
   object-position: initial !important;
 }
 
+.caption {
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 1200px) {
   .text-content {
     padding-left: 40px;
