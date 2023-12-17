@@ -861,6 +861,18 @@ header .dropdown-toggle::after {
     position: relative;
   }
 }
+@media screen and (max-width: 575px) {
+  header .info-ieproes {
+    gap: 0.4rem;
+    align-items: center;
+  }
+  header .info-ieproes ul li a {
+    font-size: 0.75rem;
+  }
+  header .info-ieproes .redes-sociales li {
+    padding: 0.4rem;
+  }
+}
 main {
   padding-top: 15rem;
   padding-bottom: 8.125rem;
