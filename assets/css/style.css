@@ -95,6 +95,35 @@ img {
     padding-right: 40px;
   }
 }
+.w-10 {
+  width: 10% !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.w-35 {
+  width: 35% !important;
+}
+
+.w-md-50 {
+  width: 50% !important;
+}
+
+.w-md-75 {
+  width: 75% !important;
+}
+
+@media screen and (max-width: 767px) {
+  .w-mobile-100 {
+    width: 100% !important;
+  }
+}
 .m-6 {
   margin: 3.5rem !important;
 }
@@ -159,6 +188,50 @@ img {
 .my-8 {
   margin-top: 4.5rem !important;
   margin-bottom: 4.5rem !important;
+}
+
+.m-9 {
+  margin: 5rem !important;
+}
+
+.mt-9 {
+  margin-top: 5rem !important;
+}
+
+.mb-9 {
+  margin-bottom: 5rem !important;
+}
+
+.mx-9 {
+  margin-left: 5rem !important;
+  margin-right: 5rem !important;
+}
+
+.my-9 {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.m-10 {
+  margin: 5.5rem !important;
+}
+
+.mt-10 {
+  margin-top: 5.5rem !important;
+}
+
+.mb-10 {
+  margin-bottom: 5.5rem !important;
+}
+
+.mx-10 {
+  margin-left: 5.5rem !important;
+  margin-right: 5.5rem !important;
+}
+
+.my-10 {
+  margin-top: 5.5rem !important;
+  margin-bottom: 5.5rem !important;
 }
 
 .p-6 {
@@ -584,7 +657,7 @@ img {
   }
 }
 @media screen and (max-width: 992px) {
-  .three-column-grid .item,
+  .three-columns-grid .item,
   .four-columns-grid .item {
     flex: 0 0 47.7%;
   }
@@ -598,10 +671,30 @@ img {
     flex: auto;
   }
   .two-columns-grid .item,
-  .three-column-grid .item,
+  .three-columns-grid .item,
   .four-columns-grid .item {
     flex: 0 0 100%;
   }
+}
+.form-wrapper {
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  padding: 3rem;
+}
+.form-wrapper.bg-gray input[type=text],
+.form-wrapper.bg-gray select {
+  border-color: #1F1A3B;
+  background-color: #EDECED;
+}
+
+form.search input[type=text],
+form.search input[type=submit] {
+  border: 0 !important;
+  border-top-left-radius: 1.875rem !important;
+  border-bottom-right-radius: 1.875rem !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  background-color: #EDECED;
 }
 form.search input {
   margin-right: 0.785rem;
@@ -620,19 +713,21 @@ form button[type=submit] img {
   height: 20px;
 }
 form input[type=text],
-form input[type=submit] {
-  border: 0 !important;
-  border-top-left-radius: 1.875rem;
-  border-bottom-right-radius: 1.875rem;
-}
-form input[type=text] {
-  background-color: #EDECED;
-  padding: 0.5rem 1.75rem;
+form select {
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-radius: 0 !important;
+  border-top-right-radius: 1.875rem !important;
+  background-color: transparent;
+  padding: 0.5rem 1rem !important;
 }
 
 @media screen and (max-width: 767px) {
   form.search input {
     width: 80% !important;
+  }
+  form > div {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 480px) {
