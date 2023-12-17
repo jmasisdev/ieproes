@@ -93,6 +93,14 @@ img {
   margin-top: 1rem;
 }
 
+.border-top-right-radius {
+  border-top-right-radius: 5rem;
+}
+
+.border-bottom-left-radius {
+  border-bottom-left-radius: 5rem;
+}
+
 @media screen and (max-width: 1200px) {
   .text-content {
     padding-left: 40px;
@@ -125,6 +133,10 @@ img {
 
 .w-md-75 {
   width: 75% !important;
+}
+
+.w-md-80 {
+  width: 80% !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -627,8 +639,6 @@ img {
 .two-columns-grid .item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   flex: 0 0 47.7%;
 }
 
@@ -664,6 +674,19 @@ img {
     flex: 0 0 31.33%;
   }
 }
+@media screen and (max-width: 1200px) {
+  .two-columns-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .two-columns-grid .item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 38%;
+  }
+}
 @media screen and (max-width: 992px) {
   .three-columns-grid .item,
   .four-columns-grid .item {
@@ -694,6 +717,16 @@ img {
 .form-wrapper.bg-gray textarea {
   border-color: #1F1A3B;
   background-color: #EDECED;
+}
+.form-wrapper.bg-blue input[type=text],
+.form-wrapper.bg-blue select,
+.form-wrapper.bg-blue textarea {
+  border-color: #fff;
+  color: #fff;
+  background-color: transparent;
+}
+.form-wrapper.bg-blue label {
+  color: #fff;
 }
 .form-wrapper.bg-skyBlue3 input[type=text],
 .form-wrapper.bg-skyBlue3 select,
@@ -1419,4 +1452,11 @@ footer .rights p {
   .form-wrapper form button[type=submit] {
     width: 40% !important;
   }
+}
+.graduados-page ul {
+  padding-left: 0;
+}
+.graduados-page p,
+.graduados-page ul {
+  text-align: justify;
 }
