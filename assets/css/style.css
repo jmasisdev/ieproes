@@ -10,6 +10,10 @@ body {
   height: 100%;
 }
 
+:focus, input {
+  outline: none !important;
+}
+
 p {
   margin-bottom: 0 !important;
 }
@@ -95,19 +99,23 @@ img {
     padding-right: 40px;
   }
 }
-.w-10 {
+.w-md-10 {
   width: 10% !important;
 }
 
-.w-15 {
+.w-md-15 {
   width: 15% !important;
 }
 
-.w-20 {
+.w-md-20 {
   width: 20% !important;
 }
 
-.w-35 {
+.w-md-25 {
+  width: 25% !important;
+}
+
+.w-md-35 {
   width: 35% !important;
 }
 
@@ -682,9 +690,16 @@ img {
   padding: 3rem;
 }
 .form-wrapper.bg-gray input[type=text],
-.form-wrapper.bg-gray select, .form-wrapper.bg-gray textarea {
+.form-wrapper.bg-gray select,
+.form-wrapper.bg-gray textarea {
   border-color: #1F1A3B;
   background-color: #EDECED;
+}
+.form-wrapper.bg-skyBlue3 input[type=text],
+.form-wrapper.bg-skyBlue3 select,
+.form-wrapper.bg-skyBlue3 textarea {
+  border-color: #1F1A3B;
+  background-color: #d4f0fb;
 }
 .form-wrapper.bg-transparent {
   border: 1px solid #6AC3EF;
@@ -716,13 +731,20 @@ form button[type=submit] img {
   height: 20px;
 }
 form input[type=text],
-form select, form textarea {
+form input[type=password],
+form input[type=email],
+form input[type=tel],
+form select,
+form textarea {
   border-width: 2px !important;
   border-style: solid !important;
   border-radius: 0 !important;
   border-top-right-radius: 1.875rem !important;
   background-color: transparent;
   padding: 0.5rem 1rem !important;
+}
+form textarea {
+  border-bottom-left-radius: 1.875rem !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -1373,6 +1395,28 @@ footer .rights p {
   background-color: #6AC3EF;
   border: 0 !important;
 }
-.buzon-de-sugerencias-page form textarea {
+
+.bolsa-de-trabajo-page .form-wrapper img {
+  width: 74px;
+  height: 74px;
+}
+.bolsa-de-trabajo-page .form-wrapper form input[type=text],
+.bolsa-de-trabajo-page .form-wrapper form input[type=password] {
   border-bottom-left-radius: 1.875rem !important;
+  border-color: #1F1A3B;
+}
+.bolsa-de-trabajo-page .form-wrapper form input::-ms-input-placeholder {
+  color: #1F1A3B !important;
+}
+.bolsa-de-trabajo-page .form-wrapper form input::placeholder {
+  color: #1F1A3B !important;
+}
+
+@media screen and (max-width: 992px) {
+  .form-wrapper {
+    width: 100% !important;
+  }
+  .form-wrapper form button[type=submit] {
+    width: 40% !important;
+  }
 }

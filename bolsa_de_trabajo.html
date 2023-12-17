@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <title>Buzón de sugerencias - IEPROES</title>
+    <title>Bolsa de trabajo - IEPROES</title>
   </head>
-  <body class="buzon-de-sugerencias-page">
+  <body class="bolsa-de-trabajo-page">
     <header>
       <div class="info-ieproes bg-blue d-flex p-3">
         <div class="flex-fill">
@@ -142,171 +142,122 @@
       <section class="text-center">
 
         <div class="container">
+          <div class="two-columns-wrapper mb-9 gap-3">
+            <div class="text-start">
+              <h2 class="headline text-skyBlue2">¡ importante !</h2>
+              <p>Estimado graduado:
+                Si no cuentas con usuario para acceder a la
+                bolsa de trabajo te sugerimos envies un
+                correo a:
+                <br>
+                gestiontalentoeyp@ieproes.edu.sv
+                <br>
+                <br>
+                <br>
+                Si buscas publicar una oferta de trabajo en
+                nuestra Bolsa de trabajo llena el formulario
+                que encuentras abajo.</p>
+            </div>
+            <div>
+              <div class="form-wrapper bg-skyBlue2 px-6 py-5 mx-auto w-md-75">
+                <img src="./assets/img/iconos/bolsa-de-trabajo.svg" alt="Bolsa de trabajo">
+                <h3 class="text-uppercase mt-3 mb-4">Bolsa de trabajo</h3>
+                <form action="" class="d-flex flex-column gap-4">
+                  <input type="text" placeholder="Usuario">
+                  <input type="password" placeholder="Contraseña">
+                  <button type="submit" class="cta align-items-center w-md-35 mx-auto">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
 
-          <h1 class="headline text-blue mb-9">Buzón de sugerencias</h1>
+          <div class="form-wrapper bg-skyBlue3">
+            <h3 class="headline text-blue">¡Encuentra a profesionales integrales
+              en nuestra bolsa de trabajo!</h3>
 
-          <div class="form-wrapper bg-transparent">
-            <h2 class="headline text-blue">¡Estudiante IEPROES, tu opinión es
-              importante para nosotros!</h2>
-            <p class="mb-5 fs-5">Queremos escucharte, llena el siguiente
-              formulario...</p>
+            <p class="mb-5 fs-5">Si tu empresa, clinica u hospital requiere de
+              personal de salud llena este formulario. Nosotros lo publicaremos
+              en nuestra bolsa de trabajo.</p>
 
             <form action>
-              <div class="row g-1 g-md-5 g-lg-3 align-items-center mb-4">
+              <div class="row g-1 g-md-3 align-items-center mb-4">
                 <div class="w-mobile-100 w-md-15 text-center text-md-end">
-                  <label for="inputNombreEstudiante" class="col-form-label">Tema
-                    de sugerencia:</label>
+                  <label for="inputNombreEstudiante" class="col-form-label">Nombre
+                    de la empresa:</label>
                 </div>
-                <div class="w-mobile-100 w-md-50">
-                  <select class="form-select" aria-label="Tema de sugerencia">
-                    <option selected>Infraestructura</option>
-                    <option value="1">Atención al estudiante</option>
-                    <option value="2">Atención al cliente</option>
-                  </select>
+                <div class="w-mobile-100 w-md-75">
+                  <input type="text" id="inputNombreEstudiante"
+                    class="form-control" aria-describedby="empresaField">
                 </div>
               </div>
 
-              <div class="row g-1 g-md-5 g-lg-3 align-items-center mb-4">
+              <div class="row g-1 g-md-3 align-items-center mb-4">
                 <div class="w-mobile-100 w-md-15 text-center text-md-end">
-                  <label for="inputNombreEstudiante" class="col-form-label">Sugerencia,
-                    dudas
-                    y/o comentarios:</label>
+                  <label for="inputNombreEstudiante" class="col-form-label">Dirección:</label>
                 </div>
-                <div class="w-mobile-100 w-md-50">
-                  <textarea class="w-100" name id cols="30" rows="5"></textarea>
+                <div class="w-mobile-100 w-md-75">
+                  <input type="text" id="inputNombreEstudiante"
+                    class="form-control" aria-describedby="empresaField">
                 </div>
               </div>
-
-              <div class="row g-1 g-md-5 g-lg-3 align-items-center mb-4">
+              <div class="row g-1 g-md-3 align-items-center mb-4">
                 <div class="w-mobile-100 w-md-15 text-center text-md-end">
-                  <label for="inputNombreEstudiante" class="col-form-label">Correo
-                    institucional:</label>
+                  <label for="inputNombreEstudiante" class="col-form-label">Puesto
+                    a ofrecer:</label>
                 </div>
-                <div class="w-mobile-100 w-md-75 text-end">
+                <div class="w-mobile-100 w-md-35 text-end">
+                  <input type="text" id="inputNombreEstudiante"
+                    class="form-control" aria-describedby="nameField">
+                </div>
+                <div class="w-mobile-100 w-md-15 text-center text-md-end">
+                  <label for="inputNombreEstudiante" class="col-form-label">Oferta
+                    de salario:</label>
+                </div>
+                <div class="w-mobile-100 w-md-25">
+                  <input type="text" id="inputNombreEstudiante"
+                    class="form-control" aria-describedby="nameField">
+                </div>
+              </div>
+              <div class="row g-1 g-md-3 align-items-center mb-4">
+                <div class="w-mobile-100 w-md-15 text-center text-md-end">
+                  <label for="inputNombreEstudiante" class="col-form-label">E-mail:</label>
+                </div>
+                <div class="w-mobile-100 w-md-35 text-end">
+                  <input type="text" id="inputNombreEstudiante"
+                    class="form-control" aria-describedby="nameField">
+                </div>
+                <div class="w-mobile-100 w-md-15 text-center text-md-end">
+                  <label for="inputNombreEstudiante" class="col-form-label">Teléfono:</label>
+                </div>
+                <div class="w-mobile-100 w-md-25">
                   <input type="text" id="inputNombreEstudiante"
                     class="form-control" aria-describedby="nameField">
                 </div>
               </div>
 
-              <div class="row g-1 g-md-5 g-lg-3 align-items-center mb-4">
+              <div class="row g-1 g-md-3 align-items-center mb-4">
                 <div class="w-mobile-100 w-md-15 text-center text-md-end">
                   <label for="inputNombreEstudiante" class="col-form-label">Interesado
                     en:</label>
                 </div>
                 <div class="w-mobile-100 w-md-50 text-end">
-                  <select class="form-select"
-                    aria-label="Seleccione sede regional">
-                    <option selected>Sede San Salvador</option>
-                    <option value="1">Sede San Miguel</option>
-                    <option value="2">Sede Santa Ana</option>
-                  </select>
+                  <textarea class="w-100" name id cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="w-mobile-100 w-md-25">
+                  <button
+                  class="cta bg-skyBlue text-blue fs-6 fw-bold px-4 ms-auto mt-5">enviar</button>
                 </div>
               </div>
-
-              <button class="cta fs-6 fw-bold px-4 ms-auto mt-5">enviar</button>
             </form>
 
           </div>
-
         </div><!-- container -->
 
       </section>
     </main>
 
     <footer>
-      <div class="container">
-
-        <div class="sedes d-flex card-content flex-column flex-md-row">
-          <div class="card">
-            <div
-              class="card-body d-flex flex-column align-items-center justify-content-center text-center">
-              <span class="card-title moonrising-font">ieproes san salvador</span>
-              <p>37ª Avenida Sur y 12 Calle Pte. #566, Colonia Flor Blanca, S.S</p>
-              <div class="d-flex gap-3 my-2">
-                <div
-                  class="flex-fill d-flex flex-row flex-md-column flex-lg-row gap-2 align-items-center align-items-center phone">
-                  <img src="./assets/img/iconos/phone.svg" alt="phone">
-                  <span class="glacial-font fw-bold">2298-9325</span>
-                </div>
-                <div
-                  class="flex-fill d-flex flex-row flex-md-column flex-lg-row gap-2 align-items-center align-items-center whatsapp">
-                  <img src="./assets/img/iconos/whatsapp.svg" alt="whatsapp">
-                  <a
-                    href="https://api.whatsapp.com/send?phone=50376808954&amp;text=¡Hola! Necesito más información"
-                    target="_blank"><span
-                      class="glacialIndifference fw-bold d-block d-sm-inline d-md-block d-lg-inline">7680-8954</span></a>
-                </div>
-              </div>
-              <div
-                class="d-flex flex-row flex-md-column flex-lg-row gap-2 align-items-center email">
-                <img src="./assets/img/iconos/email.svg" alt="email">
-                <span><a href="mailto:nuevoingreso01@ieproes.edu.sv">nuevoingreso01@ieproes.edu.sv</a></span>
-              </div>
-            </div><!-- card-body -->
-          </div><!-- card -->
-
-          <div class="card">
-            <div
-              class="card-body d-flex flex-column align-items-center justify-content-center text-center">
-              <span class="card-title moonrising-font">ieproes santa ana</span>
-              <p>Barrio Nuevo, Calle Internacional y Calle Batle, Frente a
-                Delegación de 911 de la PNC.</p>
-              <div class="d-flex gap-3 my-2">
-                <div
-                  class="flex-fill d-flex flex-row flex-md-column flex-lg-row gap-2 align-items-center align-items-center phone">
-                  <img src="./assets/img/iconos/phone.svg" alt="phone">
-                  <span class="glacial-font fw-bold">2240-8597</span>
-                </div>
-                <div
-                  class="flex-fill d-flex flex-row flex-md-column flex-lg-row gap-2 align-items-center align-items-center whatsapp">
-                  <img src="./assets/img/iconos/whatsapp.svg" alt="whatsapp">
-                  <a
-                    href="https://api.whatsapp.com/send?phone=50373456796&amp;text=¡Hola! Necesito más información"
-                    target="_blank"><span
-                      class="glacialIndifference fw-bold d-block d-sm-inline d-md-block d-lg-inline">7345-6796</span></a>
-                </div>
-              </div>
-              <div
-                class="d-flex flex-row flex-md-column flex-lg-row gap-2 align-items-center email">
-                <img src="./assets/img/iconos/email.svg" alt="email">
-                <span><a href="mailto:nuevoingreso02@ieproes.edu.sv">nuevoingreso02@ieproes.edu.sv</a></span>
-              </div>
-            </div><!-- card-body -->
-          </div><!-- card -->
-
-          <div class="card">
-            <div
-              class="card-body d-flex flex-column align-items-center justify-content-center text-center">
-              <span class="card-title moonrising-font">ieproes san miguel</span>
-              <p>10a. Avenida Sur y 13a. Calle Oriente # 801. Col. Belén, San
-                Miguel.</p>
-              <div class="d-flex gap-3 my-2">
-                <div
-                  class="flex-fill d-flex flex-row flex-md-column flex-lg-row gap-2 align-items-center align-items-center phone">
-                  <img src="./assets/img/iconos/phone.svg" alt="phone">
-                  <span class="glacial-font fw-bold">2660-3288</span>
-                </div>
-                <div
-                  class="flex-fill d-flex flex-row flex-md-column flex-lg-row gap-2 align-items-center align-items-center whatsapp">
-                  <img src="./assets/img/iconos/whatsapp.svg" alt="whatsapp">
-                  <a
-                    href="https://api.whatsapp.com/send?phone=50370614819&amp;text=¡Hola! Necesito más información"
-                    target="_blank"><span
-                      class="glacialIndifference fw-bold d-block d-sm-inline d-md-block d-lg-inline">7061-4819</span></a>
-                </div>
-              </div>
-              <div
-                class="d-flex flex-row flex-md-column flex-lg-row gap-2 align-items-center email">
-                <img src="./assets/img/iconos/email.svg" alt="email">
-                <span><a href="mailto:nuevoingreso03@ieproes.edu.sv">nuevoingreso03@ieproes.edu.sv</a></span>
-              </div>
-            </div><!-- card-body -->
-          </div><!-- card -->
-
-        </div><!-- sedes -->
-
-      </div><!-- container -->
-
       <div class="rights">
         <div class="container">
           <p>© 2022. Instituto Especializado de Profesionales de la Salud –
