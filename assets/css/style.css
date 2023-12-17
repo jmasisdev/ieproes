@@ -682,9 +682,12 @@ img {
   padding: 3rem;
 }
 .form-wrapper.bg-gray input[type=text],
-.form-wrapper.bg-gray select {
+.form-wrapper.bg-gray select, .form-wrapper.bg-gray textarea {
   border-color: #1F1A3B;
   background-color: #EDECED;
+}
+.form-wrapper.bg-transparent {
+  border: 1px solid #6AC3EF;
 }
 
 form.search input[type=text],
@@ -713,7 +716,7 @@ form button[type=submit] img {
   height: 20px;
 }
 form input[type=text],
-form select {
+form select, form textarea {
   border-width: 2px !important;
   border-style: solid !important;
   border-radius: 0 !important;
@@ -804,7 +807,7 @@ header .dropdown-toggle::after {
   }
 }
 main {
-  padding-top: 12rem;
+  padding-top: 15rem;
   padding-bottom: 8.125rem;
 }
 
@@ -1363,4 +1366,13 @@ footer .rights p {
     border-top-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
   }
+}
+.buzon-de-sugerencias-page form input[type=text],
+.buzon-de-sugerencias-page form select,
+.buzon-de-sugerencias-page form textarea {
+  background-color: #6AC3EF;
+  border: 0 !important;
+}
+.buzon-de-sugerencias-page form textarea {
+  border-bottom-left-radius: 1.875rem !important;
 }
