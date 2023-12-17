@@ -537,6 +537,20 @@ img {
   flex: 1;
 }
 
+.two-columns-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.two-columns-grid .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 47.7%;
+}
+
 .three-columns-grid {
   display: flex;
   flex-wrap: wrap;
@@ -583,6 +597,7 @@ img {
   .two-columns-wrapper > div {
     flex: auto;
   }
+  .two-columns-grid .item,
   .three-column-grid .item,
   .four-columns-grid .item {
     flex: 0 0 100%;
@@ -1176,4 +1191,48 @@ footer .rights p {
   .filosofia-institucional-page .item {
     min-height: auto;
   }
+}
+.proyeccion-social-page .actividades .item {
+  max-width: 500px;
+  min-height: 300px;
+  font-family: Moonrising !important;
+  text-wrap: wrap;
+  line-height: 2rem;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.proyeccion-social-page .actividades .item a {
+  text-decoration: none;
+  color: #fff;
+}
+.proyeccion-social-page .actividades .item h2 {
+  position: relative;
+  z-index: 1;
+}
+.proyeccion-social-page .actividades .item:nth-child(1) {
+  background-image: url(../img/proyeccion-cultural/img-01.jpeg);
+}
+.proyeccion-social-page .actividades .item:nth-child(2) {
+  background-image: url(../img/proyeccion-cultural/img-03.jpeg);
+}
+.proyeccion-social-page .actividades .item:nth-child(3) {
+  background-image: url(../img/proyeccion-cultural/img-02.jpeg);
+}
+.proyeccion-social-page .actividades .item:nth-child(4) {
+  background-image: url(../img/proyeccion-cultural/img-04.jpeg);
+}
+.proyeccion-social-page .actividades .item .overlay {
+  background-color: #1D1D1B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
 }
