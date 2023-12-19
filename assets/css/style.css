@@ -839,18 +839,44 @@ header .info-ieproes .redes-sociales li {
 header nav.navbar .navbar-brand img {
   width: 110px;
 }
+header nav.navbar .navbar-nav {
+  display: flex;
+  align-items: flex-end;
+}
+header nav.navbar .navbar-nav .nav-item {
+  background-color: rgba(237, 236, 237, 0.75);
+  margin-right: 4px;
+  max-width: 120px;
+  padding: 0;
+}
+header nav.navbar .navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
 header nav.navbar .navbar-nav .nav-item .nav-link {
   font-size: 0.875rem;
   text-wrap: wrap;
-  width: 120px;
   text-align: center;
   line-height: 1rem;
-  padding: 0;
+  padding: 0.75rem 0.4rem 0.4rem 0.4rem;
+  color: #1F1A3B;
 }
 header nav.navbar .navbar-nav .nav-item .dropdown {
-  width: 110px;
   display: flex;
   align-items: flex-end;
+}
+header nav.navbar .navbar-nav .dropdown-menu {
+  background-color: rgba(237, 236, 237, 0.75);
+  font-family: Glacial-Indifference !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin-top: 0;
+  max-width: 120px;
+}
+header nav.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  font-size: 14px;
+  text-wrap: wrap;
+  text-align: center;
+  line-height: 1rem;
 }
 header .dropdown-toggle::after {
   display: none !important;
