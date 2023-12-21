@@ -10,7 +10,8 @@ body {
   height: 100%;
 }
 
-:focus, input {
+:focus,
+input {
   outline: none !important;
 }
 
@@ -990,53 +991,6 @@ header.sticking nav.navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
   }
   header nav.navbar .navbar-nav .dropdown-menu .dropdown-item {
     font-size: 13px;
-  }
-}
-@media screen and (max-width: 992px) {
-  header {
-    position: fixed;
-    transform: translateY(0);
-  }
-  header nav.navbar .navbar-toggler {
-    border-radius: 0;
-    border-top-right-radius: 1.3rem;
-    border-bottom-left-radius: 1.3rem;
-    box-shadow: none !important;
-    color: #1F1A3B !important;
-    border-color: #1F1A3B !important;
-    font-size: 1rem;
-  }
-  header.sticking {
-    transform: translateY(-58.4px) !important;
-    border-bottom: 0;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  }
-}
-@media screen and (max-width: 767px) {
-  header nav.navbar {
-    padding: 0;
-  }
-  header nav.navbar .navbar-brand img {
-    width: 80px;
-  }
-}
-@media screen and (max-width: 575px) {
-  header {
-    position: fixed;
-    transform: translateY(0);
-  }
-  header .info-ieproes {
-    gap: 0.4rem;
-    align-items: center;
-  }
-  header .info-ieproes ul li a {
-    font-size: 0.75rem;
-  }
-  header .info-ieproes .redes-sociales li {
-    padding: 0.4rem;
-  }
-  header.sticking {
-    transform: translateY(-102.44px) !important;
   }
 }
 main {
