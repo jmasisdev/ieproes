@@ -1486,6 +1486,8 @@ footer .rights p {
   }
 }
 .proyeccion-social-page .actividades .item {
+  display: flex;
+  justify-content: center;
   max-width: 500px;
   min-height: 300px;
   font-family: Moonrising !important;
